@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!-- 最初の設定は終わっています　必要な方は触ってください -->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>チーズアカデミー</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  <script src="js/main.js"></script>  
+</head>
+<!-- 最初の設定は終わっています 必要な方は触ってください -->
+
+<body>
+  <!-- この中に記述していく -->
+  <!-- スクロールコンテンツ -->
+     <!-- 再生ボタン -->
+    <audio class="Music" controls autoplay src="music/music01.mp3" >
+    </audio>
+    <!-- 94年間ありがとうロゴ -->   
+    <button onclick="play()" id="Play">
+      <img id="ToshimaEnd" src="img/music.png" alt="">
+    </button>
+    <!-- 94年間ありがとうを押すと音楽再生 -->   
+    <script language="javascript" type="text/javascript">
+    var music = new Audio();
+    function init() {
+      music.preload = "auto";
+      music.src = "music/music01.mp3";
+      music.load();
+
+      music.addEventListener("ended", function () {
+        music.currentTime = 0;
+        music.play();
+      }, false);
+    }
+
+    function play() {
+      music.play();
+    }
+    init();
+
+    window.onload = function() {
+    document.getElementById("ToshimaEnd").onclick = function() {
+      // ここに#buttonをクリックしたら発生させる処理を記述する
+      var speed = 4000;
+      var position = $("h1").offset().top;
+      $("html,body").animate({
+            scrollTop : position
+          }, speed, "swing"); 
+      } }  
+          
+    </script>
+    <div class="ScreenBox">
+      <img src="img/screen01.png" alt="">
+      <img src="img/screen03.png" alt="">     
+      <img src="img/screen02.png" alt="">
+    </div>
+
+  <!-- ここから下にコードを書く -->
+    <!-- ローディング画面 --> 
+    <div class="parts">    
+    <h1>CAROUSEL EL DORADO</h1>
+    <!-- ナビゲーション -->  
+    <div class="contents">
+      <nav id="g_navi">
+        <ul>
+          <li><a class="menuBar" href="#ABOUT">ABOUT</a></li> 
+          <li><a class="menuBar" href="#HISTORY">HISTORY</a></li>
+          <li><a class="menuBar" href="#NEWS">NEWS</a></li>
+          <li><a class="menuBar" href="#ACCESS">ACCESS</a></li>
+          <li><a class="menuBar" href="#CONTACT">CONTACT</a></li>
+        </ul>
+      </nav>  
+    </div>
+    <div class="content1">
+      <div class="titleBox">
+        <div class="container">
+          <div id="carousel">
+            <figure><a href="#HISTORY"><img src="img/img01.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img02.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img03.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img04.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img05.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img06.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img07.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img08.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img09.jpg" alt=""></a></figure>
+            <figure><a href="#HISTORY"><img src="img/img10.jpg" alt=""></a></figure>      
+          </div>
+        </div>      
+      </div>
+    </div>
+    <div class="contents">
+      <p class="menuTitleEn" id="ABOUT" style="color: #ffd61a;">ABOUT</p>
+      <div class="textContents">
+        <p>カルーセルエルドラドについて</p>
+        <p style="margin-top: 60px;">2020年8月31日を持って94年の歴史を歩んだとしまえんが閉園しました。</p>
+        <p style="margin-top: 40px;">エルドラドはとしまえんを代表する乗り物のひとつであり<br>
+         現存する遊戯機械としては日本最古、世界的に見ても最古級のメリーゴーラウンドです。</p>
+        <p style="margin-top: 40px;">エルドラドが歩んだ軌跡を様々な思い出と共に残したい。</p>
+        <p style="margin-top: 40px;">そしてエルドラドのこれからを歩みを見つめたい。そのような想いから<br>
+          当館は開設されました。皆様とエルドラドの魅力を分かち合い、憩いの場となりましたら幸いです。</p>
+      </div>
+      <div class="aboutPictures">
+        <img src="img/img07.jpg" alt="">
+        <img src="img/img05.jpg" alt="">
+        <img src="img/img09.jpg" alt="">
+        <img src="img/img10.jpg" alt="">
+      </div>
+    </div>
+    <div class="contents">
+      <p class="menuTitleEn" id="HISTORY">HISTORY</p>
+      <div class="textContents">
+        <p>エルドラドの歴史は今から１世紀以上も前に遡ります。<br>
+          ここではエルドラドの今までの歩みをご紹介します。</p>  
+      </div>
+    </div>
+    <div class="contents">
+      <div class="CourseContents">
+        <img src="img/img20.jpg" alt="">
+        <div class="CourseTextBox1">
+          <div class="CourseTextArticle_1">
+            <p class="CourseTextTitle">世界最先端の技術から生まれたエルドラド</p>
+            <p class="CourseText">1907年、ドイツでヒューゴ・ハッセが、当時の機械技術と<br>
+              美術工芸技術のすべてを投入して作製しました。<br>
+              オクトーバーフェストにて公に初披露され、当時は<br>
+              「トロットワール・ルーラン」（日本語で「動く歩道」）<br>
+              と呼ばれました。</p>
+          </div>
+        </div>
+      </div>
+      <div class="CourseContents">
+        <div class="CourseTextBox2">
+          <div class="CourseTextArticle_2">
+            <p class="CourseTextTitle">世界を旅するエルドラド</p>
+            <p class="CourseText">その後ヨーロッパ各地にて開催されていたカーニバルなどで<br>
+              運営を行ったのち、1911年にアメリカのコニーアイランドに<br>
+              存在した遊園地スティープルチェイスに寄付されました。<br>
+              1964年にこの乗り物を運営していた遊園地が閉園を迎えたため、<br>
+              一時は廃棄処分される予定でした。<br></p>
+          </div>
+        </div>
+        <img src="img/img27.jpg" alt="">
+      </div>
+      <div class="CourseContents">
+        <img src="img/img24.jpg" alt="">
+        <div class="CourseTextBox1">
+          <div class="CourseTextArticle_1">
+            <p class="CourseTextTitle">オリンピックと上陸したエルドラド</p>
+            <p class="CourseText">廃棄寸前のエルドラドを豊島園が買取。<br>
+              1970年に6つにもなるコンテナに積まれ日本に輸送されました。<br>
+              当時の専門家などの指導により1年間の修復作業を経て、<br>
+              1971年4月3日にとしまえんで稼動が開始しました。<br>
+              修復作業中、乗り物の中からスティープルチェイスの入場券が<br>
+              発見されたとか。</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+   <!-- NEWS -->   
+    <div class="contents">
+      <p class="menuTitleEn" id="NEWS" style="color: #ffd61a;">NEWS</p>
+      <div class="textContents">
+        <p>ニュース</p>
+      </div>
+      <div class="NewsContents">
+        <div class="NewsContentsParts"> 
+          <img class="NewsPicture" src="img/img08.jpg" alt="">
+          <div class="NewsArticle">
+            <p class="NewsArticleDaily">2016/11/18</p>
+            <p>チーズアカデミー卒業生のコスゲさんによる<br>
+              チーズだけをふんだんに使用した話題のピザ屋<br>
+              「Kosuge Pizza」が渋谷でオープンしました！</p>
+          </div>       
+        </div>
+        <div class="NewsContentsParts"> 
+          <img class="NewsPicture" src="img/img06.jpg" alt="">
+          <div class="NewsArticle">
+            <p class="NewsArticleDaily">2016/11/18</p>
+            <p>チーズアカデミー卒業生のコスゲさんによる<br>
+              チーズだけをふんだんに使用した話題のピザ屋<br>
+              「Kosuge Pizza」が渋谷でオープンしました！</p>
+          </div>       
+        </div>
+        <div class="NewsContentsParts"> 
+          <img class="NewsPicture" src="img/img03.jpg" alt="">
+          <div class="NewsArticle">
+            <p class="NewsArticleDaily">2016/11/18</p>
+            <p>チーズアカデミー卒業生のコスゲさんによる<br>
+              チーズだけをふんだんに使用した話題のピザ屋<br>
+              「Kosuge Pizza」が渋谷でオープンしました！</p>
+          </div>       
+        </div>
+      </div>
+      <div class="button">
+        <a href="#MORE" class="btn-flat-border">
+          <p>MORE</p>
+        </a>
+      </div>
+      
+    </div>
+   <!-- ACCESS -->   
+   <div class="AccessContents">
+      <div class="menuTitleEn" id="ACCESS">ACCESS</div>
+      <div class="textContents" style="margin-bottom: 60px;">としまえん跡地</div>
+      <iframe class="GoogleMap"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6476.594968737755!2d139.64440392553786!3d35.74349227071931!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6018edacf23243b9%3A0x7bb5e7e6c4be18d6!2z44Go44GX44G-44GI44KT!5e0!3m2!1sja!2sjp!4v1603327020421!5m2!1sja!2sjp" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <table class="CompanyInfo">
+        <tr>
+          <th>名称</th>
+          <td>豊島園 ※練馬城址公園予定地</td>
+        </tr>
+        <tr>
+          <th>事務所所在地</th>
+          <td>〒176-0022 東京都練馬区向山３丁目２５−１</td>
+        </tr>
+        <tr>
+          <th>TEL</th>
+          <td>✖︎✖︎-✖︎✖︎✖︎✖︎-✖︎✖︎✖︎✖︎</td>
+        </tr>
+        <tr>
+          <th>FAX</th>
+          <td>✖︎✖︎-✖︎✖︎✖︎✖︎-✖︎✖︎✖︎✖︎</td>
+        </tr>
+        <tr>
+          <th>MAIL</th>
+          <td>dummy@cheeseacademy.tokyo</td>
+        </tr>
+      </table>       
+    </div>
+   <!-- CONTACT -->   
+    <div class="contents">
+      <div class="menuTitleEn" id="CONTACT">CONTACT</div>
+      <div class="textContents">
+        <p style="margin-top: 60px;">としまえんの思い出募集してます！</p>
+        <p style="margin-top: 30px;">皆様のとしまえんの思い出エピソード募集してます。<br>
+          その他、お問い合わせもお気軽にどうぞ。お待ちしております。</p>
+        <p style="margin-top: 30px;">※当サイトはとしまえんの非公式ファンサイトです。<br>
+          としまえんに関するクレーム・苦情等は受け付けておりませんのでご了承下さい。</p>
+      </div>
+      <form class="ContactBox" method="POST" action="">
+        <table class="ContactTable">
+          <tr>
+            <th><label>名前</label></th>
+            <td><input class="InputText" id="Name" type="text" name="Name"></td>
+          </tr>
+          <tr>
+            <th><label>カナ</label></th>
+            <td><input class="InputText" id="Kana" type="text" name="Kana"></td>
+          </tr>
+          <tr>
+            <th><label>メールアドレス</label></th>
+            <td><input class="InputText" id="Email" type="text" name="Email"></td>
+          </tr>
+          <tr>
+            <th>
+              <label>
+                <p>チーズアカデミーを<br>知ったキッカケ</p>
+              </label>
+            </th>
+            <td>
+                <select class="SelectBox">
+                  <option value="1" selected>google検索</option>
+                  <option value="2">SNS</option>
+                  <option value="3">紹介</option>
+                  <option value="4">たまたま通りかかった</option>
+                  <option value="5">その他</option>
+                </select>
+            </td>
+          </tr>
+          <tr>
+            <th><label>志望動機</label></th>
+            <td>
+              <div class="Options">
+                <input type="checkbox" id="1">
+                <label for="1">起業をしたい</label>  
+              </div>
+              <div class="Options">
+                <input type="checkbox" id="2">
+                <label for="2">チーズ系企業に就職・転職したい</label>
+              </div>
+              <div class="Options">
+                <input type="checkbox" id="3">
+                <label for="3">チーズと関わる仕事をしており、仕事に生かしたい</label>
+              </div>
+              <div class="Options">
+                <input type="checkbox" id="4">
+                <label for="4">起業をしたい</label>
+              </div>
+            </td>
+          </tr>          
+          <tr>
+            <th><label>詳細</label></th>
+            <td>
+              <textarea class="InputDetail" id="Detail" name="Detail" ></textarea>
+            </td>
+          </tr>  
+        </table>
+      </form>
+      <div class="button" style="margin-top: 30px;">
+        <a href="#SUBMIT" class="btn-flat-border">
+          <p>送信</p>
+        </a>
+      </div>         
+    </div>
+    <div class="Copyright">
+      <p>copyrights 2016 Cheeese Academy Tokyo All RIghts Reserved.</p>
+    </div>
+  </div>
+</div> 
+  <!-- ここから上にコードを書く -->
+</body>
+</html>

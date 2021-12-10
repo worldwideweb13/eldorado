@@ -1,0 +1,409 @@
+/* ここから下に記載していく */
+body{
+	font-size: 16px;
+	color: #222222;
+}
+
+p{
+	font-family: 'Sacramento', cursive;
+	line-height: 160%;
+}
+
+.parts{
+    width: 1200px;
+	margin: 0 auto;
+	background-color: #FFFFEE;
+}
+
+/* menubar */
+.menuBar {
+	text-decoration: none;
+	color: #222222;	
+}
+
+/* 音楽再生ボタン設置箇所の設定 */
+.Music {
+	position: fixed;  /* 位置を固定させます。 */
+	right: 20px;      /* 画面の右橋から20px空けます。 */
+	bottom: 20px;     /* 画面の下端から20px空けます。 */
+  }
+
+/* としおととしこ */
+#Play {
+	width: 1200px;
+	margin: 250px 0 350px 0;
+	padding-left: 100px	;
+	display: flex;
+	justify-content: center;
+	background-color: transparent;
+	border: none;
+}
+
+	#ToshimaEnd {
+		width: 50%;
+	}
+
+/* スクリーン */
+.ScreenBox{
+	width: 1200px;
+}
+
+/* テキストタイトル */
+.menuTitleEn{
+	font-family: 'Sacramento', cursive;
+	font-weight: bold;
+	font-size: 18px;
+	text-align: center;
+}
+
+
+/* カルーセル */
+@import url(https://fonts.googleapis.com/css?family=Anaheim);
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
+
+/* *{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  box-sizing: border-box;
+}
+*:before,
+*:after{
+	box-sizing: border-box;
+} */
+
+/* html,body{
+	min-height: 100%;
+} */
+
+h1{
+	display: table;
+	font-family: 'Sacramento', cursive; 
+	margin: auto;
+	padding-top: 60px;
+	text-transform: uppercase;
+	font-size: 4em;
+	font-weight: 400;
+	text-shadow: 0 1px white, 0 2px black;
+}
+.container{
+	margin: 4% auto;
+	width: 210px;
+	height: 140px;
+	position: relative;
+	perspective: 1000px;
+}
+#carousel{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	transform-style: preserve-3d;
+ 	animation: rotation 120s infinite linear;
+}
+#carousel:hover{
+	animation-play-state: paused;
+}
+#carousel figure{
+	display: block;
+	position: absolute;
+  	width: 260px;
+	height: 180px; 
+	left: 10px;
+	top: 10px;
+	/* background: black; */
+	overflow: hidden;
+	border: solid 2px olivedrab;
+}
+#carousel figure:nth-child(1){transform: rotateY(0deg) translateZ(400px);}
+#carousel figure:nth-child(2) { transform: rotateY(40deg) translateZ(400px);}
+#carousel figure:nth-child(3) { transform: rotateY(80deg) translateZ(400px);}
+#carousel figure:nth-child(4) { transform: rotateY(120deg) translateZ(400px);}
+#carousel figure:nth-child(5) { transform: rotateY(160deg) translateZ(400px);}
+#carousel figure:nth-child(6) { transform: rotateY(200deg) translateZ(400px);}
+#carousel figure:nth-child(7) { transform: rotateY(240deg) translateZ(400px);}
+#carousel figure:nth-child(8) { transform: rotateY(280deg) translateZ(400px);}
+#carousel figure:nth-child(9) { transform: rotateY(320deg) translateZ(400px);}
+#carousel figure:nth-child(10) { transform: rotateY(360deg) translateZ(400px);}
+
+img{
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  transition: all .5s ease;
+}
+
+/* img:hover{
+	-webkit-filter: grayscale(0);
+  transform: scale(1.2,1.2);
+} */
+
+@keyframes rotation{
+	from{
+		transform: rotateY(0deg);
+	}
+	to{
+		transform: rotateY(480deg);
+	}
+}
+
+
+/* テキスト本文 */
+.textContents{
+	margin-top: 30px;
+	text-align: center;
+}
+
+/* ホームページ内各コンテンツ */
+.contents {
+	margin-top: 60px;
+}
+
+/* ボタン要素 */
+
+.button {
+	display: flex;
+	justify-content: center;
+}
+
+.btn-flat-border {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 60px;
+	font-size: 18px;
+	/* display: inline-block; */
+	padding: 0.3em 1em;
+	text-decoration: none;
+	background-color: #ffd61a;
+	color: white;
+	border-radius: 3px;
+	transition: .4s;
+  }
+  
+  .btn-flat-border:hover {
+	background: yellowgreen;
+  }
+
+#g_navi ul {
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1200px;
+	display: flex;		
+}
+
+#g_navi ul li {
+	font-family: 'Sacramento', cursive;
+	font-weight: bold;
+	/* float: left; */
+	display: block;
+	text-align: center;
+	width: 20%;
+	font-size: 20px;
+	justify-content: center;		
+}
+
+/* #g_navi ul {
+	overflow: hidden;
+	margin: 0 auto;		
+} */
+
+
+.content1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 1200px;
+	height: 370px;
+	/* background-size: cover; */
+}
+
+	.content1 .titleBox{
+		text-align: center;
+	}
+
+		.content1 .titleBox .textTitle{
+			color: white;
+			font-size: 55px;
+		}
+
+		.content1 .titleBox .titleText {
+			color: white;
+			font-size: 30px;
+			margin-top: 20px;
+		}
+
+.aboutPictures {
+	margin-top: 80px;
+	display: flex;
+	justify-content: left;
+}
+
+.aboutPictures img {
+	width: 300px;
+  /* これを使うことで縦横比率を整えて表示してくれる方法 */
+	object-fit: cover;	
+}
+
+.CourseContents {
+	display: flex;	
+}
+
+.CourseContents img {
+	width: 600px;
+}
+
+.CourseContents .CourseTextBox1 {
+	background-color: #FFFFEE;
+	width: 600px;
+	display: flex;
+	align-items: center;
+}
+
+.CourseContents .CourseTextBox2 {
+	background-color: #FFFFEE;
+	width: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+
+.CourseContents .CourseTextBox1 .CourseTextArticle_1 {
+	padding-left: 50px;
+}
+
+.CourseContents .CourseTextBox2 .CourseTextArticle_2 {
+	padding-right: 50px;
+}
+
+.CourseContents .CourseTextTitle {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.CourseContents .CourseText {
+	margin-top: 30px;
+}
+
+.contents .NewsContents {
+	margin: 60px auto;
+	display: flex;
+	justify-content: center;
+}
+
+.contents .NewsContents .NewsContentsParts{
+	width: 300px;
+	margin: auto 15px;
+}
+
+.contents .NewsContents .NewsContentsParts .NewsArticleDaily{
+	margin: 30px 0 24px;
+}
+
+.contents .NewsContents .NewsContentsParts p{
+	font-size: 14px;
+}
+
+.AccessContents {
+	margin-top: 60px;
+	padding: 60px 0;
+	background-color: #FFFFEE;
+}
+
+/* GoogleMap */
+.GoogleMap {
+	width: 100%;
+	height: 300px;
+}
+
+/* 会社情報 */
+table.CompanyInfo  {
+	margin-top: 60px;
+	display: flex;	
+	justify-content: center;
+    border-collapse: separate;
+    border-spacing: 30px 30px;
+}
+
+.CompanyInfo th, td {
+	font-size: 16px;
+	text-align: left;
+}
+
+/* 問い合わせフォーム */
+form.ContactBox {
+	margin-top: 70px;
+	display: flex;	
+	justify-content: center;
+}
+
+.ContactBox .ContactTable {
+	table-layout: fixed;
+	border-top : 2px solid #bfbfbf;
+	border-bottom : 2px solid #bfbfbf;
+}
+
+	.ContactTable th, .ContactTable td{
+		border-top: 1px solid #bfbfbf;
+		font-size: 16px;
+		padding: 8px 8px;
+		text-align: left;
+		vertical-align: middle;
+	}
+	
+	.ContactTable, .ContactTable th {
+		width: 240px;
+	}
+
+	.ContactTable, .ContactTable td {
+		width: 400px;
+	}	
+
+	/* .ContactTable label {
+		line-height: 16px;		
+	}	 */
+
+	.ContactTable input {
+		border: 1px solid #bfbfbf;
+		justify-content: stretch;
+		height: 36px;
+		font-size: 16px;	
+	}
+
+	.ContactTable .InputText {
+		width: 324px;
+	}
+
+	/* チーズアカデミーを知ったキッカケ */
+	.ContactTable .SelectBox {
+		border: 1px solid #bfbfbf;
+		justify-content: stretch;
+		width: 330px;
+		height: 36px;
+		font-size: 16px;
+	}
+
+	/* 志望動機 */
+	.Options {
+		display: flex;
+		align-items: center;
+	}
+
+	/* 詳細 */
+	.InputDetail {
+		width: 324px;
+	}
+
+.Copyright {
+	background-color: #707070;
+	margin-top: 140px;
+	padding: 30px 0;
+	text-align: center;
+}
+
+.Copyright p{
+	color: white;
+	font-size: 18px;
+}
+
