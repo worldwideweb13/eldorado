@@ -1,4 +1,4 @@
-# カルーセル・エルドラド ファインサイト
+# カルーセル・エルドラド ファンサイト
 
 [![IMAGE ALT TEXT HERE](thumbnailImage.png)](https://youtu.be/h1iD7-Uv5oE)
 
