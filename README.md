@@ -10,7 +10,7 @@
 2020年8月末で閉園したとしまえんの回転木馬、カルーセルエルドラドのファンサイトを作りました。写真を円柱上に回転させることで、メリーゴーランドの動きを再現させてみました。
 
 ### 動作環境
-* [register.html](register.html)をブラウザで立ち上げれば、アプリは動作します。設定ファイル等の設定は入りません。
+* [index.html](index.html)をブラウザで立ち上げれば、アプリは動作します。設定ファイル等の設定は入りません。
 * VsCode推奨。拡張機能でLiveServerをインストール。[LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)経由でindex.htmlをブラウザで開くとアプリが動作します。
 
 
